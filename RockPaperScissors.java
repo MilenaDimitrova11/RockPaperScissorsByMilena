@@ -31,7 +31,7 @@ public class RockPaperScissors {
         int computerRandomNumber = random.nextInt(3);
         String computerMove = "";
 
-        switch(computerRandomNumber){
+        switch (computerRandomNumber) {
             case 0:
                 computerMove = "Rock";
                 break;
@@ -45,15 +45,11 @@ public class RockPaperScissors {
 
         System.out.printf("You chose %s and the computer chose %s.%n", playerMove, computerMove);
 
-        if((playerMove.equals(ROCK) && computerMove.equals(SCISSORS)) ||
-                (playerMove.equals(PAPER) && computerMove.equals(ROCK)) ||
-                playerMove.equals(SCISSORS) && computerMove.equals(PAPER)){
+        if ((playerMove.equals(ROCK) && computerMove.equals(SCISSORS)) || (playerMove.equals(PAPER) && computerMove.equals(ROCK)) || playerMove.equals(SCISSORS) && computerMove.equals(PAPER)) {
             System.out.println("Congrats! You win.");
             System.out.println("Thank you for playing!");
 
-        } else if ((playerMove.equals(ROCK) && computerMove.equals(PAPER)) ||
-                (playerMove.equals(PAPER) && computerMove.equals(SCISSORS) ||
-                playerMove.equals(SCISSORS) && computerMove.equals(ROCK))) {
+        } else if ((playerMove.equals(ROCK) && computerMove.equals(PAPER)) || (playerMove.equals(PAPER) && computerMove.equals(SCISSORS) || playerMove.equals(SCISSORS) && computerMove.equals(ROCK))) {
             System.out.println("You lose :(");
         } else {
             System.out.println("This game was a draw.");
